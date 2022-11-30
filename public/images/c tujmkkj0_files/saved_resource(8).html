@@ -1,0 +1,117 @@
+
+<!-- saved from url=(0315)https://www.prothomalo.com/international/article/1607271/%E0%A6%9B%E0%A7%9F%E0%A6%A4%E0%A6%B2%E0%A6%BE-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%AA%E0%A7%9C%E0%A7%87%E0%A6%93-%E0%A6%85%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A4-%E0%A7%A9-%E0%A6%AC%E0%A6%9B%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>var inDapIF = true;</script></head><body marginwidth="0" marginheight="0" leftmargin="0" rightmargin="0" topmargin="0"><script type="text/javascript">
+var bfs = document.createElement('script');
+bfs.type = "text/javascript";
+bfs.src = (top.window.location.protocol === "https:") ? "https://ss3.zedo.com/gecko/util/tagutil.js?"+Math.random() : "http://c14.zedo.com/gecko/util/tagutil.js?"+Math.random();
+bfs.onload =  function() {
+var ztu = new ZtagUtil();
+
+var gparent;
+
+	if(top.window.document.querySelectorAll("article.jw_detail_content_holder").length > 0) {
+		console.log("Article 1");
+		gparent="div itemprop articleBody p 2";
+
+	}
+	else
+	{
+		console.log("Article 2");
+		gparent="div class contents_listing|widget div 20p";
+		
+	}
+
+
+var geckoProps = {
+ superid : "362413",
+ placement : "362413_1",
+ nid:"3407",
+ cid:"24",
+ pubid:"1",
+ dimid:"88",
+ width: "160",
+ height: "600",
+ withMaxGuranteed: "3",
+ enableHBRequest:"true",
+ debugToken: "21aeQSct%7C8882751759251",
+ reload: true, //to activate reload feature
+ placementReloadCount: 5,
+ platformtype:["Desktop"],
+ reloadTag : 30,// time duration between reloads.
+ excludeGeo:[{"country": "15"}] // to exclude ad from serving on these countires.
+};
+var geckoInviewProps  = {
+"pixelScrollTrigger": ["1"], 
+"IVPosition":["BL"],
+"pubImpressionTracker":["z_imtr"],
+"pubClickTracker":["z_cltr"],
+"IVMinWidth ":["1200"],
+"IVMinHeight":["700"],
+"refreshTime":["30"],//ad refresh time
+"adCount":["3"] // ads to be shown per page view.
+};	
+
+
+var geckocrProps = {
+
+ parent:gparent,
+ superid : "340722",
+ placement : "340722_1",
+ nid:"3407",
+ cid:"22",
+ pubid:"1",
+ dimid:"83",
+ width: "300",
+ height: "250",
+ enableHBRequest:"true",
+ reload: true, //to activate reload feature
+ placementReloadCount: 5,
+ platformtype:["SmartPhone", "Tablet"],
+ reloadTag : 30,// time duration between reloads.
+ excludeGeo:[{"country": "15"}] // to exclude ad from serving on these countires.
+};
+var geckocrBevProps = {	
+"cssSelector":[geckocrProps.parent],
+"renderWhenInView":["0"],
+"multiAdWhenInView":["0"],
+"adCount":["3"] // ads to be shown per page view.
+};	
+
+		
+			var domain_name = window.location.href;
+			var home_page_url ="https://www.prothomalo.com/";		
+			
+			
+			if(domain_name != home_page_url)
+					{
+						if(ztu.isNotDesktop())
+						{
+							console.log("Mobile calls");
+							ztu.useCR(geckocrProps, geckocrBevProps);
+							ztu.buildCRTag();	
+						}
+						else
+						{
+							console.log("Blocking CR");
+						}
+					}
+					else 
+					{
+						console.log("Home page called...Blocking CR");
+						
+					}
+
+
+			if(ztu.isNotDesktop())
+			{
+				console.log("Mobile call, Blocking InView");
+			}
+			else
+			{
+				ztu.useInview(geckoProps, geckoInviewProps);
+				ztu.buildInvTag();	
+			}
+
+}
+document.body.appendChild(bfs);
+</script><script type="text/javascript" src="./tagutil.js.download"></script><script src="./Gecko.min.js.download"></script><iframe id="zzflag_CookieSync" src="./saved_resource(9).html" allowfullscreen="true" seamless="true" frameborder="0" scrolling="no" width="0px" height="0px" style="display: none;"></iframe></body></html>
